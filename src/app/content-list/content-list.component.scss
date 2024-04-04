@@ -1,0 +1,43 @@
+.content-wrap {
+  position: relative;
+
+  .content-image {
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+  }
+
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: color 0.3s; // Use color transition instead of background-color
+
+    i {
+      display: none;
+    }
+  }
+
+  .prev-button {
+    left: 10px;
+  }
+
+  .next-button {
+    right: 10px;
+  }
+
+  &:hover {
+    .prev-button,
+    .next-button {
+      i {
+        display: block;
+        color: white;
+        font-size: 3.5rem;
+      }
+    }
+  }
+}

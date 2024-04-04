@@ -1,11 +1,9 @@
 export interface IContentList {
   id: number;
-  contentId: number;
   title: string;
   contentType: IContentType;
   description: string;
   releaseDate: Date;
-  duration: number;
   imageUrl: string;
   genres: IGenre[];
 }

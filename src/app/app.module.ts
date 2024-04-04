@@ -4,8 +4,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ContentListComponent } from './content-list/content-list.component';
 import { ContentListModule } from './content-list/content-list.module';
+import { NgxSlickJsModule } from 'ngx-slickjs';
 
 @NgModule({
   declarations: [AppComponent],

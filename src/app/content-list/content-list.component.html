@@ -1,1 +1,23 @@
-<p>content-list works!</p>
+<div class="content-wrap">
+  <div slickContainer #slickController="slick" [slickConfig]="config">
+    <ng-container *ngIf="slickController.initialize">
+      <div *ngFor="let movie of movies">
+        <div *ngFor="let genre of movie.genres">
+          <div *ngIf="genre.name.trim().toLowerCase() === 'action'">
+            <img
+              slickItem
+              class="content-image"
+              [src]="movie.imageUrl"
+              alt=""
+            />
+            <p>{{ movie.title }}</p>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+  <button class="prev-button" (click)="slickController.prev()">
+    <i class="fas fa-angle-left"></i>
+  </button>
+  <button class="next-button" (click)="slickController.next()"> <i class="fas fa-angle-right"></i></button>
+</div>
