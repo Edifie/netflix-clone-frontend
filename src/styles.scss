@@ -1,2 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@fortawesome/fontawesome-free/css/all.css";
+
+html {
+  background-color: #141414;
+}
+
+@font-face {
+  font-family: "NetflixSans";
+  src: url("assets/fonts/netflix-sans-font/NetflixSans-Regular.otf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NetflixSans";
+  src: url("assets/fonts/netflix-sans-font/NetflixSans-Bold.otf")
+    format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NetflixSans";
+  src: url("assets/fonts/netflix-sans-font/NetflixSans-Light.otf")
+    format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+body {
+  font-family: "NetflixSans", Arial, sans-serif;
+}

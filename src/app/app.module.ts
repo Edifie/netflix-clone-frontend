@@ -6,6 +6,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContentListModule } from './content-list/content-list.module';
 import { NgxSlickJsModule } from 'ngx-slickjs';
+import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarModule } from './navbar/navbar.module';
+import { MovieModule } from './movie/movie.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -13,6 +16,8 @@ import { NgxSlickJsModule } from 'ngx-slickjs';
     BrowserModule,
     AppRoutingModule,
     ContentListModule,
+    NavbarModule,
+    MovieModule,
     HttpClientModule,
   ],
   providers: [],

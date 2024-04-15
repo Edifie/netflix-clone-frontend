@@ -1,0 +1,45 @@
+<nav class="navbar-overall">
+  <div>
+    <a routerLink="/browse">
+      <img src="/assets/images/Netflix_Logo_RGB.png" alt="Netflix" />
+    </a>
+  </div>
+  <ul>
+    <li>
+      <a [class.active]="currentUrl === '/browse'" routerLink="/browse">Home</a>
+    </li>
+    <li>
+      <a
+        [class.active]="currentUrl === '/browse/genre/tvshows'"
+        routerLink="/browse/genre/tvshows"
+        >TV Shows</a
+      >
+    </li>
+    <li>
+      <a
+        [class.active]="currentUrl === '/browse/genre/movies'"
+        routerLink="/browse/genre/movies"
+        >Movies</a
+      >
+    </li>
+    <li>
+      <a [class.active]="currentUrl === '/latest'" routerLink="/latest"
+        >News & Popular</a
+      >
+    </li>
+    <li>
+      <a
+        [class.active]="currentUrl === '/browse/mylist'"
+        routerLink="/browse/mylist"
+        >My List</a
+      >
+    </li>
+    <li>
+      <a
+        [class.active]="currentUrl === '/browse/original-audio'"
+        routerLink="/browse/original-audio"
+        >Browse by Languages</a
+      >
+    </li>
+  </ul>
+</nav>

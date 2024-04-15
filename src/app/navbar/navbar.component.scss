@@ -1,0 +1,43 @@
+.navbar-overall {
+  display: flex;
+  align-items: center;
+
+  font-family: "NetflixSans", Arial, sans-serif;
+
+  a {
+    color: #e5e5e5;
+    text-decoration: none;
+    font-weight: lighter;
+  }
+
+  a:hover {
+    color: #b3b3b3;
+    -webkit-transition: color 0.2s ease-out;
+    -moz-transition: color 0.2s ease-out;
+    -o-transition: color 0.2s ease-out;
+    -ms-transition: color 0.2s ease-out;
+    transition: color 0.2s ease-out;
+  }
+
+  a.active {
+    font-weight: bold;
+    color: white;
+  }
+
+  div {
+    img {
+      width: 7rem;
+    }
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0.5rem 0;
+
+    li {
+      padding: 0 1rem;
+      font-size: 14px;
+    }
+  }
+}
